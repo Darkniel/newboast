@@ -1,0 +1,97 @@
+::-webkit-scrollbar {
+	width: 15px;
+	height: 15px;
+}
+ 
+::-webkit-scrollbar-track {
+	border: 0px;
+	background-color: #F2F2F2;
+	-webkit-box-shadow: inset 1px 1px 0px #DBDBDB;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #D9D9D9;
+	padding: 0px;
+	border-width: 2px 2px 2px 3px;
+	border-color: transparent;
+	border-style: solid;
+	background-clip: content-box;
+	-webkit-box-shadow: inset 0px 0px 1px 0px #606060;
+	-webkit-border-radius: 5px 4px 4px 5px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 75px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	border-width: 3px 2px 2px 2px;
+	-webkit-border-radius: 5px 5px 4px 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #C1C1C1;
+	-webkit-box-shadow: inset 0px 0px 1px 0px #575757;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: #919191;
+	-webkit-box-shadow: inset 0px 0px 1px 0px #3E3E3E;
+}
+
+/*::-webkit-scrollbar-button {
+	background-color: #D9D9D9;
+	width: 20px;
+	height: 20px;
+	-webkit-box-shadow: inset 0px 0px 1px 0px #606060;
+	-webkit-border-radius: 1px;
+}
+
+::-webkit-scrollbar-button:hover {
+	background-color: #C1C1C1;
+	-webkit-box-shadow: inset 0px 0px 1px 0px #575757;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+	background-image: url(chrome-extension://ddehdnnhjimbggeeenghijehnpakijod/images/defaults/left.png);
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+	background-image: url(chrome-extension://ddehdnnhjimbggeeenghijehnpakijod/images/defaults/right.png);
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+	background-image: url(chrome-extension://ddehdnnhjimbggeeenghijehnpakijod/images/defaults/up.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+	background-image: url(chrome-extension://ddehdnnhjimbggeeenghijehnpakijod/images/defaults/down.png);
+}
+
+::-webkit-scrollbar-button:horizontal:decrement:active {
+	background-image: url(chrome-extension://ddehdnnhjimbggeeenghijehnpakijod/images/defaults/left.png);
+	background-color: #D9D9D9;
+	background-position: 0px 1px;
+	-webkit-box-shadow: inset 1px 1px 3px 1px #919191;
+}
+
+::-webkit-scrollbar-button:horizontal:increment:active {
+	background-image: url(chrome-extension://ddehdnnhjimbggeeenghijehnpakijod/images/defaults/right.png);
+	background-color: #D9D9D9;
+	background-position: 0px 1px;
+	-webkit-box-shadow: inset 1px 1px 3px 1px #919191;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:active {
+	background-image: url(chrome-extension://ddehdnnhjimbggeeenghijehnpakijod/images/defaults/up.png);
+	background-color: #D9D9D9;
+	background-position: 0px 1px;
+	-webkit-box-shadow: inset 1px 1px 3px 1px #919191;
+}
+
+::-webkit-scrollbar-button:vertical:increment:active {
+	background-image: url(chrome-extension://ddehdnnhjimbggeeenghijehnpakijod/images/defaults/down.png);
+	background-color: #D9D9D9;
+	background-position: 0px 1px;
+	-webkit-box-shadow: inset 1px 1px 3px 1px #919191;
+}*/

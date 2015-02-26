@@ -1,0 +1,15 @@
+# Ignorando grupos de archivos individuales por extensión
+
+# rutas/de/locación/*.extensión
+
+# Ignorando una Carpeta
+
+/node_modules
+/bower_components
+/boast
+/.sass-cache
+/src/fonts
+/src/img
+# Ignorando un Archivo Individual
+
+# ruta/a/archivo.ext
