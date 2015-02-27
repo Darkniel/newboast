@@ -1,0 +1,288 @@
+//===============================================
+//==========BOOTSTRP BRAKE POINTS================
+//===============================================
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//===============================================
+//==============ON THE COURT=====================
+//===============================================
+
+
+.bg-fixed{
+    background-position: 50% 10%;
+    background-attachment: fixed;
+    background-size: cover;
+    //ARREGLAR COVER CON JAVASCRIPT PARA INTERNET EXPLORER QUE SOLO SOPORTA BACKGROUND SIZE EN PIXELES
+    //background-size:window.width;
+    //background-size:1120px;
+}
+
+.ontc-bg{
+    background-image: url('ontc-bg.jpg');
+}
+.slider-container{
+    height:500px;
+    position: relative;
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+        h1{
+            font-family: 'Sullivan-Bevel';
+            color: #FFF;
+            border-top: 1px solid #FFF;
+            border-bottom: 1px solid #FFF;
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 65px;
+            font-weight: 100;
+            line-height: 65px;      }
+        h2{
+            color: #FFF;
+            font-family: 'Wisdom-Script';
+            margin: 0;
+            font-size:65px;
+            line-height:55px;
+            font-weight: 100;
+        }
+    }
+}
+.browse-content{
+    background:$white-boast;
+    text-align:center;
+    text-transform:uppercase;
+    padding-top:40px;
+    span{
+        display: inline-block;
+        background: url("rainbow-underline.png") bottom repeat-x rgba(0, 0, 0, 0);
+        font-size: 30px;
+    }
+    .browse-nav{
+        .first-level{
+            a{
+                font-size: 27px;
+                color:$gray-boast;
+                padding: 0 10px;
+                &.active{
+                    color: $black-boat;
+                }
+                &:hover{
+                    color: $black-boat;
+
+                }
+            }
+        }
+        .second-level{
+            a{
+                font-size: 15px;
+                color:$black-boat;
+                font-weight: bold;
+                padding: 0 10px;
+                &.active{
+                    color: $red-boat;
+                }
+                &:hover{
+                    color: $red-boat;
+
+                }
+            }
+        }
+
+    }
+    .browse-grid-container{
+        display: table;
+
+        background:$red-boat;
+        width: 100%;
+        max-width: 1024px;
+        margin: auto;
+
+        .blocker{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            background:rgba(255,255,255,0.9);
+            z-index: 0;
+            left: 0;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+            div:nth-child(2n+1) .product{
+                .quick-view{
+                    left: 0;
+                    right: inherit;
+                }
+                &:hover{
+                    .quick-view{
+                        left: -300px;
+                        right: inherit;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: $screen-md-min) {
+            div:nth-child(3n+1) .product{
+                .quick-view{
+                    left: 0;
+                    right: inherit;
+                }
+                &:hover{
+                    .quick-view{
+                        left: -300px;
+                        right: inherit;
+                    }
+                }
+            }
+
+        }
+        .product{
+            position: relative;
+            opacity: 1;
+
+            &:hover{
+                opacity: 1;
+                z-index: 20;
+                .quick-view{
+                    opacity: 1;
+                    left: inherit;
+                    right: -300px;
+                    z-index: 19;
+                }
+                a{
+                    position: relative;
+                    z-index: 21;
+                }
+            }
+            /* &:not(:hover){
+                opacity: 0.5;
+            } */
+            img{
+                max-width:100%;
+                max-height:100%;
+                vertical-align: middle;
+            }
+            background:$blue-boat;
+        }
+    }
+}
+.product-details{
+    text-transform: uppercase; 
+    &.full{
+        padding:0 0 0 30px;
+        .swatch .header:after{
+            clear:both;
+        }
+        .swatch a{
+            position:absolute;
+            right:30px;
+        }
+    }
+    &.quick-view{
+        display: inline-block;
+        background-color: $white-alpha-boast;
+        position: absolute;
+        right: 0;
+        left: inherit;
+        width: 270px;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+        padding: 30px 15px 15px 15px;
+        text-align:left;
+        font-weight: bold;
+
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        @media screen and (max-width: $screen-sm) {
+            display: none;
+        }
+    }
+    .product-name{
+        margin-top: 5px;
+    }
+    .price{
+        color: $red-boat;
+        &.before{
+            text-decoration: line-through;
+        }
+    }
+    .description{
+        margin-top: 5px;
+        font-size: 15px;
+        text-transform: none;
+        font-weight: normal;
+    }
+    .purchase{
+        margin-bottom: 20px;
+    }
+    input[type="submit"]{
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        margin:15px 0 0 0;
+        background:$blue-boat;
+        color:white;
+        width:auto;
+        padding:0 15px;
+        line-height: 32px;
+        border:0;
+        -webkit-font-smoothing: antialiased;
+
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+
+        &:hover{
+            color: $white-boast;
+            background: $red-boat;
+            cursor: pointer;
+        }
+    }
+}

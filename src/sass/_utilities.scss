@@ -1,0 +1,38 @@
+// ============= UTILITIES =====================
+// ==============================================
+.padd-l{
+    padding-left:10px;
+}
+.padd-r{
+    padding-right:10px;
+}
+.text-center{
+    text-align:center !important;
+}
+.no-margin{
+    margin:0;
+}
+.content-container{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding-top:30px;
+    .black-blocker{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        top: 0;
+        left: 0;
+        z-index: 15;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+}
+.text-divider{
+    text-transform: uppercase;
+    margin:0 15px 20px 15px;
+    border-bottom:solid 1px $black-boat;
+}

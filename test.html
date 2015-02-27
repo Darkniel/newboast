@@ -1,0 +1,28 @@
+<div class="swatch clearfix" data-option-index="{{ option_index }}">
+	<div class="header">{{ swatch }}</div>
+
+	<div data-value="{{ value | escape }}" class="swatch-element {% if is_color %}color {% endif %}{{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %}">
+		<div class="tooltip">{{ value }}</div>
+		<input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="id" value="{{ variant.id }}" {% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
+		<label for="swatch-{{ option_index }}-{{ value | handle }}" style="background-color: {{ value | split: ' ' | last | handle }}; background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})">
+			<img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" />
+		</label>
+	</div>
+
+	<div data-value="{{ value | escape }}" class="swatch-element {% if is_color %}color {% endif %}{{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %}">
+		<div class="tooltip">{{ value }}</div>
+		<input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="id" value="{{ variant.id }}" {% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
+		<label for="swatch-{{ option_index }}-{{ value | handle }}" style="background-color: {{ value | split: ' ' | last | handle }}; background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})">
+			<img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" />
+		</label>
+	</div>
+
+	<div data-value="{{ value | escape }}" class="swatch-element {% if is_color %}color {% endif %}{{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %}">
+		<div class="tooltip">{{ value }}</div>
+		<input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="id" value="{{ variant.id }}" {% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
+		<label for="swatch-{{ option_index }}-{{ value | handle }}" style="background-color: {{ value | split: ' ' | last | handle }}; background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})">
+			<img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" />
+		</label>
+	</div>
+
+</div>
