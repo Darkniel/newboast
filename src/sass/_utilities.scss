@@ -16,7 +16,10 @@
     width: 100%;
     max-width: 1024px;
     margin: auto;
-    padding-top:30px;
+    .content-box{
+        position:relative;
+        padding-top:30px;
+    }
     .black-blocker{
         position: absolute;
         width: 100%;
@@ -35,4 +38,30 @@
     text-transform: uppercase;
     margin:0 15px 20px 15px;
     border-bottom:solid 1px $black-boat;
+}
+.underline{
+    background: url("rainbow-underline.png") bottom repeat-x rgba(0, 0, 0, 0);
+}
+
+// ============= COMPONENTS =====================
+// ==============================================
+
+//BUTTONS
+
+.white-bt{
+   background:$white-boast;
+   color:$black-boat; 
+   &:hover{
+       background:$red-boat;
+       color:$white-boast;
+   }
+}
+.blue-bt{
+   background:$blue-boat; 
+   color:$white-boast; 
+    &:hover{
+       background:$red-boat;
+       color:$white-boast;
+   }
+
 }

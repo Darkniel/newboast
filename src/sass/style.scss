@@ -10,6 +10,7 @@ $white-boast: #FFF;
 $white-alpha-boast: rgba(255,255,255,0.9);
 $gray-boast: #ababab;
 $red-boat: #C32829;
+$red-alpha-boast: rgba(195, 40, 41, 0.70);
 $blue-boat: #393ca2;
 $black-boat: #000;
 
@@ -117,7 +118,7 @@ figcaption {
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     -ms-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out; 
     img{
         max-width: 90%;
     }
