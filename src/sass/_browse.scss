@@ -46,7 +46,6 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 
 
 .bg-fixed{
-    background-position: 50% 10%;
     background-attachment: fixed;
     background-size: cover;
     //ARREGLAR COVER CON JAVASCRIPT PARA INTERNET EXPLORER QUE SOLO SOPORTA BACKGROUND SIZE EN PIXELES
@@ -56,9 +55,15 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 
 .ontc-bg{
     background-image: url('ontc-bg.jpg');
+    background-position: 50% 10%;
 }
 .slider-container{
-    height:500px;
+    &.sm{
+        height: 262px;
+    }
+    &.lg{
+        height: 500px;
+    }
     position: relative;
     .title{
         position: absolute;
@@ -86,6 +91,11 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
             font-size:65px;
             line-height:55px;
             font-weight: 100;
+        }
+        div{
+            text-transform: uppercase;
+            color: $white-boast;
+            margin-top: 10px;
         }
     }
     .top-link{

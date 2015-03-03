@@ -1,0 +1,170 @@
+.lookbook-bg{
+    background-image: url('lookbook-bg.jpg'); 
+    background-position: 50% -250px; 
+}
+figure.lookbook{
+	overflow:visible;
+	.black-blocker{
+		opacity: 0;
+		text-transform: uppercase;
+		width: 100%;
+		height: 100%;
+		background:$black-alpha-boast; 
+		position: absolute;
+		top: 0;
+		vertical-align: middle;
+		color: #FFF;
+		text-align: center;
+	    -webkit-transition: all 0.4s ease-out;
+	    -moz-transition: all 0.4s ease-out;
+	    -o-transition: all 0.4s ease-out;
+	    -ms-transition: all 0.4s ease-out;
+	    transition: all 0.4s ease-out;
+		span{
+			position:absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    -webkit-transform: translate(-50%, -50%);
+		}
+	}
+	&:hover .black-blocker{
+		opacity: 1;
+	}
+	.pic-container{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		img {
+		    margin: auto;
+		    width: 100%;
+		    /*top: -30px;*/
+		    /*max-width: 100%;*/
+		    display: block;
+		    position: relative;
+
+		    -webkit-transition: all 0.4s ease-out;
+		    -moz-transition: all 0.4s ease-out;
+		    -o-transition: all 0.4s ease-out;
+		    -ms-transition: all 0.4s ease-out;
+		    transition: all 0.4s ease-out;
+
+		    /* Webkit for Chrome and Safari */
+		    -webkit-transform: scale(1, 1); // This is the scale for the normal size of the image.
+
+		    /* Webkit for Mozila Firefox */
+		    -moz-transform: scale(1, 1);
+
+		    /* Webkit for IE( Version: 11, 10 ) */
+		    -ms-transform: scale(1, 1);
+
+		}
+	} 
+	&:hover .pic-container img{
+	  /* Webkit for Chrome and Safari */
+	  -webkit-transform: scale(1.2, 1.2);
+	  -webkit-transition-duration: 500ms;
+	  -webkit-transition-timing-function: ease-out;
+
+	  /* Webkit for Mozila Firefox */
+	  -moz-transform: scale(1.2, 1.2);
+	  -moz-transition-duration: 500ms;
+	  -moz-transition-timing-function: ease-out;
+
+	  /* Webkit for IE( Version: 11, 10 ) */
+	  -ms-transform: scale(1.20, 1.20);
+	  -ms-transition-duration: 500ms;
+	  -ms-transition-timing-function: ease-out;
+	}
+}
+.shop-look-container{
+	background:$white-boast;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity:0;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	&.active{
+		-webkit-animation-duration: 0.5s;
+		-webkit-animation-name: fadeIn;
+		 -webkit-animation-fill-mode: forwards;
+
+		display: inline-block;
+		//opacity:1;
+	}
+	.close-bt{
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background: url("close-bt.png") center center no-repeat rgba(0, 0, 0, 0);
+		top: 15px;
+		right: 20px;
+		z-index: 30;
+	}
+
+
+	ul{
+		position: absolute;
+		width:95%;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    -webkit-transform: translate(-50%, -50%);
+		padding:0;
+		margin:0;
+		list-style:none;
+		text-transform:uppercase;
+		text-align:center;
+		li{
+			.name{
+				margin-top: 30px
+			}
+			.options{
+				font-size: 13px;
+			}
+			.price{
+				color: $red-boat;
+				font-weight: bold;
+
+			}
+			.swatch > div{
+				float:inherit;
+				margin: 0px 0px 10px 0;
+			}
+			img{
+				max-width: 100%;
+
+			}
+			.social{
+				a{
+					display: inline-block;			
+				}
+			}
+		}
+	}
+	
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        display:none;
+        opacity: 0;
+    }
+
+    1% {
+        display: inline-block ;
+        opacity: 0;
+    }
+
+    100% {
+        display: inline-block ;
+        opacity: 1;
+    }
+}

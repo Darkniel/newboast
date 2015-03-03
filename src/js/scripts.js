@@ -13,6 +13,14 @@
 	$(document).ready(function ($) {
 		$(".flexnav").flexNav();
 
+		$( ".lookbook-bt" ).click(function(event) {
+			event.preventDefault();
+		  $( this ).next().toggleClass( "active" );
+		});
+		$( ".shop-look-container .close-bt" ).click(function(event) {
+			event.preventDefault();
+		  $( this ).parent().toggleClass( "active" );
+		});
 		$( ".sign-in" ).click(function() {
 		  $( '.sign-in-form' ).toggleClass( "active" );
 		});

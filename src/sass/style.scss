@@ -13,6 +13,7 @@ $red-boat: #C32829;
 $red-alpha-boast: rgba(195, 40, 41, 0.70);
 $blue-boat: #393ca2;
 $black-boat: #000;
+$black-alpha-boast: rgba(0, 0, 0, 0.70);
 
 //@import "vars";
 @import "header";
@@ -23,6 +24,7 @@ $black-boat: #000;
 @import "swatch-attr-selectors";
 @import "product"; 
 @import "utilities"; 
+@import "lookbook"; 
 
 a{
     text-decoration: none;
@@ -110,10 +112,19 @@ figure:hover img.pic {
 }
 
 figcaption {
+
     position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+
+    /* position: absolute;
     width: 100%;
     top: 51%;
-    text-align: center;
+    text-align: center; */
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -122,9 +133,37 @@ figcaption {
     img{
         max-width: 90%;
     }
-    &.first img{
-        margin-top: -48px;
+    .title{
+        text-align: center;
+        width: 90%;
+        h1{
+            font-family: 'Sullivan-Bevel';
+            color: #FFF;
+            border-top: 1px solid #FFF;
+            border-bottom: 1px solid #FFF;
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 55px;
+            font-weight: 100;
+            line-height: 65px;      }
+        h2{
+            color: #FFF;
+            font-family: 'Wisdom-Script';
+            margin: 0;
+            font-size:55px;
+            //line-height:55px;
+            margin-top: -25px;
+            font-weight: 100;
+        }
+        div{
+            text-transform: uppercase;
+            color: $white-boast;
+            margin-top: 10px;
+        }
     }
+
+
 }
 
 figure:hover figcaption{

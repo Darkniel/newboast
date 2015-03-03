@@ -49,16 +49,22 @@
 //BUTTONS
 
 .white-bt{
+  text-transform: uppercase;
    background:$white-boast;
    color:$black-boat; 
+   border: none;
+   outline: none;
    &:hover{
        background:$red-boat;
        color:$white-boast;
    }
 }
 .blue-bt{
+  text-transform: uppercase;
    background:$blue-boat; 
    color:$white-boast; 
+   border: none;
+   outline: none;
     &:hover{
        background:$red-boat;
        color:$white-boast;
