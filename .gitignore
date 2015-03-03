@@ -8,8 +8,8 @@
 /bower_components
 /boast
 /.sass-cache
-/src/fonts
-/src/img
+#/src/fonts
+#/src/img
 # Ignorando un Archivo Individual
 
 # ruta/a/archivo.ext
