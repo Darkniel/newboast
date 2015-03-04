@@ -23,7 +23,7 @@ var config = {
 gulp.task('connect', function() {
     connect.server({
         root: config.outputDir,
-        port:8002,
+        port:8003,
         open: {
             browser: 'Google Chrome'
         },

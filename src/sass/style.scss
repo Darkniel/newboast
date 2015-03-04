@@ -17,6 +17,7 @@ $black-boat: #000;
 $black-alpha-boast: rgba(0, 0, 0, 0.70);
 
 //@import "vars";
+@import "reset";
 @import "header";
 @import "footer";
 @import "push-menu";
@@ -27,6 +28,7 @@ $black-alpha-boast: rgba(0, 0, 0, 0.70);
 @import "utilities"; 
 @import "lookbook"; 
 @import "donate"; 
+@import "ambassadors"; 
 
 a{
     text-decoration: none;
@@ -289,7 +291,27 @@ figure .newsletter{
 }
 
 .content-title{
-    color: $red-boat;
+    &.red{
+        color: $red-boat;
+        h1{
+            border-top: 3px solid $red-boat;
+            border-bottom: 3px solid $red-boat;
+        }
+    }
+    &.white{
+        color: $white-boast;
+        h1{
+            border-top: 3px solid $white-boast;
+            border-bottom: 3px solid $white-boast;
+        }
+    }
+    &.black{
+        color: $black-boat;
+        h1{
+            border-top: 3px solid $black-boat;
+            border-bottom: 3px solid $black-boat;
+        }
+    }
     h1{ 
         font-family: "Sullivan-Bevel", Helvetica, sans-serif;
         font-weight: normal;

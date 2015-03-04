@@ -60,6 +60,12 @@
    color:$black-boat; 
    border: none;
    outline: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+
    &:hover{
        background:$red-boat;
        color:$white-boast;
@@ -71,9 +77,33 @@
    color:$white-boast; 
    border: none;
    outline: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+
     &:hover{
        background:$red-boat;
        color:$white-boast;
+   }
+
+}
+.blue-bt-alt{
+  text-transform: uppercase;
+   background:$blue-boat; 
+   color:$white-boast; 
+   border: none;
+   outline: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+
+    &:hover{
+       background:$white-boast;
+       color:$red-boat;
    }
 
 }
