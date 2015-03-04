@@ -9,6 +9,7 @@
 $white-boast: #FFF;
 $white-alpha-boast: rgba(255,255,255,0.9);
 $gray-boast: #ababab;
+$gray-dark-boast: #777;
 $red-boat: #C32829;
 $red-alpha-boast: rgba(195, 40, 41, 0.70);
 $blue-boat: #393ca2;
@@ -25,6 +26,7 @@ $black-alpha-boast: rgba(0, 0, 0, 0.70);
 @import "product"; 
 @import "utilities"; 
 @import "lookbook"; 
+@import "donate"; 
 
 a{
     text-decoration: none;
@@ -146,7 +148,8 @@ figcaption {
             margin: 0;
             font-size: 55px;
             font-weight: 100;
-            line-height: 65px;      }
+            line-height: 65px;      
+        }
         h2{
             color: #FFF;
             font-family: 'Wisdom-Script';
@@ -160,6 +163,9 @@ figcaption {
             text-transform: uppercase;
             color: $white-boast;
             margin-top: 10px;
+        }
+        img{
+            max-width: 100%;
         }
     }
 
@@ -279,6 +285,36 @@ figure .newsletter{
                 cursor: pointer;
             }
         }
+    }
+}
+
+.content-title{
+    color: $red-boat;
+    h1{ 
+        font-family: "Sullivan-Bevel", Helvetica, sans-serif;
+        font-weight: normal;
+        border-top: 3px solid $red-boat;
+        border-bottom: 3px solid $red-boat;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 100;
+        line-height: 40px;      
+        margin: 10px 0 0 0;
+    }
+    h2{
+        font-family: 'Wisdom-Script';
+        margin: 0;
+        font-size:35px;
+        line-height:35px;
+        font-weight: 100;
+    }
+    div{
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    img{
+        max-width: 100%;
     }
 }
 

@@ -1,0 +1,67 @@
+.donate-bg{
+    background-image: url('donate-bg.jpg'); 
+    background-position: 50% 40%; 
+}
+.donate-bt{
+    text-transform: uppercase;
+	text-align:center;
+    color: $red-boat;
+    display: inline-block;
+    &:hover{
+    	color: $black-boat;
+    	h1{
+		        border-top: 3px solid $black-boat;
+		        border-bottom: 3px solid $black-boat;
+    	}
+    }
+    h1{ 
+        font-family: "Sullivan-Bevel", Helvetica, sans-serif;
+        font-weight: normal;
+        border-top: 3px solid $red-boat;
+        border-bottom: 3px solid $red-boat;
+        display: inline-block;
+        font-size: 60px;
+        font-weight: 100;
+        line-height: 60px;      
+        margin: 10px 0 0 0;
+    }
+    div{
+        margin-top: 10px;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+form.donate-form{
+	display:inline-block;
+	max-width: 90%;
+	width: 600px;
+	label{
+	    text-transform: uppercase;
+		text-align:right;
+	    color: $red-boat;
+	}
+	input[type="text"]{
+		border: 1px solid #F3F3F3;
+		border-radius: 0;
+		box-sizing: border-box;
+		padding: 0.15em;
+		margin-bottom: 0.25em;
+		background: #F3F3F3;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		width: 100%;
+		outline: none;
+		color: $gray-dark-boast;
+		&:focus{
+			border: 1px solid $red-boat;
+		}
+	}
+	span{
+	    text-transform: uppercase;
+	    font-size: 13px;
+	    color: $red-boat;
+	    vertical-align: top;
+	}
+}

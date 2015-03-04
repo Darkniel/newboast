@@ -97,6 +97,9 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
             color: $white-boast;
             margin-top: 10px;
         }
+        img{
+            max-width: 100%;
+        }
     }
     .top-link{
         position:absolute;
