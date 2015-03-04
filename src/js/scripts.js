@@ -13,7 +13,7 @@
 	$(document).ready(function ($) {
 
 		//tweens overlap
-		var tl = new TimelineLite();
+		var tl = new TimelineLite({paused:true});
 		tl.to("#tl-1", 0, {autoAlpha:1});
 		tl.to("#tl-2", 2, {autoAlpha:1});
 		tl.to("#tl-3", 2, {autoAlpha:1});
@@ -34,7 +34,7 @@
 			tl.to($( this ), 2, {autoAlpha:1}, "-=1");
 		  	//console.log( index + ": " + $( this ));
 		});*/
- 		tl.play();
+ 		
 		$("#ctrl").noUiSlider({
 			start: [ 0 ],
 			range: {
@@ -63,8 +63,6 @@
 			event.preventDefault();
 			$('#ctrl').val($(this).data('percent'));
 		});
-
-
 
 
 		$(".flexnav").flexNav();
@@ -118,11 +116,6 @@
 		//   $( 'nav' ).toggleClass( "active" );
 		// });
 		$( "#menu-bt" ).click(function() {
-			 		tl.play();
-			 		console.log('TIMELINE PLAY')
-			 		TweenLite.to($(this), 2, {autoAlpha:1});
-
-
 			if($(this).isMobile()){
 				$( '.st-container' ).toggleClass( "st-menu-open" );
 			}
