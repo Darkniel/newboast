@@ -29,7 +29,13 @@ $black-alpha-boast: rgba(0, 0, 0, 0.70);
 @import "lookbook"; 
 @import "donate"; 
 @import "ambassadors"; 
+@import "nouislider"; 
+@import "pips"; 
+@import "timeline"; 
 
+.container-fluid{
+    min-height: 100%; 
+}
 a{
     text-decoration: none;
     color: $black-boat;
@@ -207,7 +213,7 @@ figure em {
     &.r-arrow{
         right: 0px;
             background: url("arrow-l.png") center center no-repeat rgba(0, 0, 0, 0);
-    }
+    } 
 }
 figure #newsletter-bt{
     position: absolute;

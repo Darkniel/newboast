@@ -64,6 +64,10 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
     &.lg{
         height: 500px;
     }
+    &.xl{
+        height: 90%;
+        height: 700px;
+    }
     position: relative;
     .title{
         position: absolute;

@@ -1,0 +1,146 @@
+.timeline-bg{
+    background-image: url('timeline-bg.jpg'); 
+    background-position: 50% 40%; 
+}
+.slideshow{
+	position: relative;
+	text-align: center;
+
+	ul.slideshow-container{
+		list-style: none;
+		padding:0;
+		margin:0;
+		background:red;
+		position:relative;
+		display: inline-block;
+		li.slide-container{
+			position:absolute;
+			display: inline-block;
+	        top: 0;
+	        left: 50%;
+	        transform: translate(-50%, -0);
+	        -webkit-transform: translate(-50%, 0);
+	        opacity: 0;
+			.cap{
+				&.left{
+					left: 0;
+				}
+				&.right{
+					right: 0;
+				}
+				&.white{
+					color: $white-boast;
+					.year{
+						color: $white-boast;
+					}
+					.text{
+						color: $white-boast;
+					}
+
+				}
+				&.black{
+					color: $black-boat;
+					.year{
+						color: $black-boat;
+
+					}
+					.text{
+						color: $black-boat;
+					}
+				}
+				position:absolute;
+				display: inline-block;
+				width: 130px;
+				padding:15px;
+				margin: 0;
+				.year{
+					font-size: 35px;
+					margin: 0;
+					padding: 0;
+					line-height: 28px;
+				}
+				.text{
+					font-size: 14px;
+					margin: 0;
+					padding: 0;
+					text-transform: none;
+					span{
+						font-size: 16px;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+	.slideshow-controller{
+		#ctrl{
+			position: relative;
+			display: block;
+			z-index: 5;
+		}
+		width: 300px;
+		margin:500px auto 0 auto; 
+		.racket{
+			width: 19px;
+			height: 52px;
+    		background: url('racket.png') center center no-repeat rgba(0, 0, 0, 0);
+    		z-index: 4;
+    		&.l{
+				/* position: absolute;
+				margin-left: -17px;
+				margin-top: -20px; */
+				position: relative;
+				margin-left: -17px;
+				margin-top: -20px;
+				float: left;
+       		}
+    		&.r{
+				position: relative;
+				margin-right: -17px;
+				margin-top: -20px;
+				float: right;
+			    -moz-transform: scaleX(-1);
+			    -o-transform: scaleX(-1);
+			    -webkit-transform: scaleX(-1);
+			    transform: scaleX(-1);
+			    filter: FlipH;
+			    -ms-filter: "FlipH";
+       		}
+		}
+		.step-buttons{
+			border:solid 1px $white-boast;	
+			/* -webkit-box-sizing: content-box; */
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			margin-top: 15px;
+			padding: 0;
+			a{
+				box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				display: inline-block;
+				width: 20%;
+				text-align: center;
+				margin: 0;
+				padding: 0;
+				float: left;
+				border-right:solid 1px $white-boast;
+				color: $white-boast;
+				&:hover{
+					background:$white-boast;
+					color: $red-boat;
+				}				
+			}
+		}
+	}
+}
+.noUi-pips .noUi-marker-large:first-child{
+	width:0;
+}
+.noUi-pips .noUi-marker-large:nth-child(31){
+	width:0;
+}
+.noUi-pips .noUi-value{
+	display:none;
+}
