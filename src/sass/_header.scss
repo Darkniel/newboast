@@ -101,7 +101,7 @@ header{
 	padding:5px 15px;
 	display: block;
 	top: -250px;
-	width: 190px;
+	width: 280px;
 	background-color: #FFF;
 	position: absolute;
 	//top: 102px;
@@ -111,55 +111,200 @@ header{
 	border-right: solid 10px #C32829;
 	border-left: solid 10px #C32829;
 	right: 260px;
-	z-index:14;
+	z-index:16;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
-
 	&.active{
-		top:104px;
+		top:94px;
 	}
-	&>div{
-		width:100%;
-		text-align:center;
+	a{
+		text-transform: uppercase;
+		font-size: 12px;
+		line-height: 28px;
+		padding: 0 5px;
+		vertical-align: bottom;
+
+		&.signup{
+			color:$blue-boat;
+		}
+		&.forgot{
+			color:$red-boat;
+		}
+		&:hover{
+			color: $black-boat;
+		}
 	}
 	.close-bt{
-		display:block;
-		position:absolute;
-		width:20px;
-		height:20px;
-		background: url("close-bt.png") center center no-repeat rgba(0, 0, 0, 0);
-		top:15px;
-		right:20px;
+		top:5px;
+		right: 10px;
+	}
+	input[type="email"], input[type="text"],input[type="password"]{
+		border: 1px solid #F3F3F3;
+		border-radius: 0;
+		box-sizing: border-box;
+		padding: 0.15em;
+		margin-bottom: 0.25em;
+		background: #F3F3F3;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		width: 100%;
+		outline: none;
+		color: $gray-dark-boast;
+		&:focus{
+			border: 1px solid $red-boat;
+		}
 	}
 	label{
-		text-transform: uppercase;
-		float: left;
-		line-height: 19px;
-		margin-top: 15px;
-	}
-	input{
-		width:180px;
-		border:none;
-		background: #f3f3f4;
-		font-size: 11px;
-		line-height:28px;
-		padding:0 5px;
-		outline: none;
-	}
-	input[type="submit"]{
-		font-size: 17px;
-		text-align: center;
-		text-transform: uppercase;
-		margin:15px 0;
-		background:$blue-boat;
-		color:white;
-		width:70%;
+		text-transform:uppercase;
+		font-size: 15px;
 	}
 }
 
+.floating-dialog{
+	&.white{
+			background: $white-boast;;
+	}
+	&.red{
+			background: $red-boat;;
+	}
+	position: fixed;
+	z-index: 14;
+	top: -70%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding: 5px;
+	overflow: hidden;
+	box-sizing: border-box;
+	height: auto;
+	min-width:320px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	&.active{
+		top: 50%;
+	}
+
+	img{
+		vertical-align: middle;
+		max-width: 100%;
+	}
+
+}
+.close-bt{
+	&.white{
+		background: url("close-bt-w.png") center center no-repeat rgba(0, 0, 0, 0);
+	}
+	&.black{
+		background: url("close-bt.png") center center no-repeat rgba(0, 0, 0, 0);
+	}
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 15px;
+	right: 20px;
+	z-index: 30;
+}
+.news-letter-form{
+	background:$red-boat;
+	padding:15px;
+	box-sizing: border-box;
+	label{
+		text-transform:uppercase;
+		font-size: 15px;
+	}
+	input[type="submit"]{
+		width: 100%
+	}
+	input[type="email"]{
+		width: 100%;
+		padding: 0 15px;
+		box-sizing: border-box;
+		color: $gray-dark-boast;
+		border:0;
+		height: 28px;
+	}
+}
+.create-account-form{
+	background:$white-boast;
+	padding:15px;
+	box-sizing: border-box;
+	.title{
+		text-transform:uppercase;
+		font-size: 25px;
+	}
+	input[type="email"], input[type="text"],input[type="password"]{
+		border: 1px solid #F3F3F3;
+		border-radius: 0;
+		box-sizing: border-box;
+		padding: 0.15em;
+		margin-bottom: 0.25em;
+		background: #F3F3F3;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		width: 100%;
+		outline: none;
+		color: $gray-dark-boast;
+		&:focus{
+			border: 1px solid $red-boat;
+		}
+	}
+	label{
+		text-transform:uppercase;
+		font-size: 15px;
+	}
+}
+.lost-password-form{
+	background:$white-boast;
+	padding:15px;
+	box-sizing: border-box;
+	.title{
+		text-transform:uppercase;
+		font-size: 25px;
+	}
+	p{
+		font-size: 15px;
+	}
+	input[type="email"], input[type="text"],input[type="password"]{
+		border: 1px solid #F3F3F3;
+		border-radius: 0;
+		box-sizing: border-box;
+		padding: 0.15em;
+		margin-bottom: 0.25em;
+		background: #F3F3F3;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		width: 100%;
+		outline: none;
+		color: $gray-dark-boast;
+		&:focus{
+			border: 1px solid $red-boat;
+		}
+	}
+	label{
+		text-transform:uppercase;
+		font-size: 15px;
+	}
+}
+
+.group{
+	box-sizing:border-box;
+	&-l{
+		padding-right: 5px;
+	}
+	&-r{
+		padding-left: 5px;
+	}
+}
 /* General menu styling */
 nav{
 	text-transform: uppercase;

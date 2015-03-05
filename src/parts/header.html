@@ -1,4 +1,5 @@
 <!--Init Part: Header-->
+
 <header class="row">
 	<div>
 		<div class="left">
@@ -29,15 +30,87 @@
 	</div>
 </header>
 <form class="sign-in-form">
-	<a  href="" class="close-bt"></a>
-	<label for="email">Email</label>
+	<a  href="" class="close-bt black"></a>
+	<label for="email">Email</label><br>
 		<input type="email" id="email"><br>
-	<label for="password">Password</label>
+		<label for="password">Password</label><br>
 		<input type="password" id="password"><br>
-		<div>
-			<input type="submit" id="sign-in-submit" value="Submit">
+		<div class="spacer-top-15">
+			<input type="submit" id="sign-in-submit" value="Submit" class="blue-bt-alt">
+			<a id="signup" href="/" class="signup">Sing up</a>
+			<a id="forgot" href="/" class="forgot">Forgot password</a>
 		</div>
 </form>
+<div class="floating-dialog white">
+	<a href="" class="close-bt white"></a>
+	<img src="assets/newsletter-pic-01.jpg">
+	<form class="news-letter-form row no-margin">
+		<div class="content-title white text-center">
+			<h1>Join our news letter</h1>
+			<h2>To get the vip treatment</h2>
+		</div>		
+		<div class="no-pad col-xs-12 col-sm-12 spacer-top">
+			<label for="email">Email</label><br>
+		</div>
+		<div class="no-pad col-xs-12 col-sm-9">
+			<input type="email" id="email">
+		</div>
+		<div class="no-pad col-xs-12 col-sm-3">
+			<input type="submit" id="sign-in-submit" value="Submit" class="blue-bt-alt">
+		</div>
+	</form>
+</div>
+<div class="floating-dialog red">
+	<a href="" class="close-bt black"></a>
+	<form class="create-account-form row no-margin">
+		<div class="title text-center spacer-top spacer-bottom-15">Create an account</div>
+		<div class="no-pad col-xs-12 col-sm-6">
+			<div class="group-l">
+				<label for="fname">First Name</label><br>
+				<input type="text" id="fname">
+			</div>
+		</div>
+		<div class="no-pad col-xs-12 col-sm-6">
+			<div class="group-r">
+				<label for="lname">Last Name</label><br>
+				<input type="text" id="lname">
+			</div>
+		</div>
+		<div class="no-pad col-xs-12 col-sm-12">
+			<label for="email">Email</label><br>
+			<input type="email" id="email">
+		</div>
+		<div class="no-pad col-xs-12 col-sm-6">
+			<div class="group-l">
+				<label for="password">Password</label><br>
+				<input type="password" id="password">
+			</div>
+		</div>
+		<div class="no-pad col-xs-12 col-sm-6">
+			<div class="group-r">
+				<label for="rpassword">Re-enter Password</label><br>
+				<input type="password" id="rpassword">
+			</div>
+		</div>
+		<div class="no-pad col-xs-12 col-sm-12 text-center spacer-top-15">
+			<input type="submit" id="sign-in-submit" value="Submit" class="blue-bt">
+		</div>
+	</form>
+</div>
+<div class="floating-dialog red">
+	<a href="" class="close-bt black"></a>
+	<form class="lost-password-form row no-margin">
+		<p>Lost your password? Please enter your email address. 
+		You will receive a link to create a new password via email.</p>
+		<div class="no-pad col-xs-12 col-sm-12">
+			<label for="email">Email</label><br>
+			<input type="email" id="email">
+		</div>
+		<div class="no-pad col-xs-12 col-sm-12 text-center">
+			<input type="submit" id="sign-in-submit" value="Submit" class="blue-bt">
+		</div>
+	</form>
+</div>
 <nav>
 	<ul class="nav">
 		<li class="dropdown"><a href="#">Collections</a>

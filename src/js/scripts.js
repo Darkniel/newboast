@@ -71,6 +71,7 @@
 			event.preventDefault();
 		  $( this ).next().toggleClass( "active" );
 		});
+
 		$( ".shop-look-container .close-bt" ).click(function(event) {
 			event.preventDefault();
 		  $( this ).parent().toggleClass( "active" );
@@ -149,6 +150,27 @@
 		$("nav ul").each(function(){
 			$(this).height(biggestHeight);
 		});
+
+
+		$( "#signup" ).click(function(event) {
+			event.preventDefault();
+			$( '.sign-in-form' ).toggleClass( "active" );
+			$( '.create-account-form' ).parent().toggleClass( "active" );
+		});
+		$( "#forgot" ).click(function(event) {
+			event.preventDefault();
+			$( '.sign-in-form' ).toggleClass( "active" );
+			$( '.lost-password-form' ).parent().toggleClass( "active" );
+		});
+		$( "#joinus" ).click(function(event) {
+			event.preventDefault();
+			$( '.news-letter-form' ).parent().toggleClass( "active" );
+		});
+		$( ".close-bt" ).click(function(event) {
+			event.preventDefault();
+			$(this).parent().removeClass( "active" );
+		});
+
 
 
 	})
